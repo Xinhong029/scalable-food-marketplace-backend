@@ -1,0 +1,13 @@
+{
+  "result": "PASS",
+  "listingId": 1009989,
+  "orderId": 94,
+  "stockBefore": 100,
+  "stockAfter": 99,
+  "primedKeysBeforeOrder": [1, 1],
+  "keysAfterCommittedOrder": [0, 0],
+  "rejectedDuplicateHttpStatus": 400,
+  "keyExistsAfterRejectedOrder": 1,
+  "ttlBeforeRejectedOrder": 60,
+  "ttlAfterRejectedOrder": 60
+}

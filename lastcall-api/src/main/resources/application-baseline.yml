@@ -1,0 +1,71 @@
+# Local learning/benchmark profile. Activate baseline alone, not dev,baseline.
+server:
+  address: 127.0.0.1
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/lastcall_eats_baseline?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:root123}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+  data:
+    redis:
+      host: ${REDIS_HOST:127.0.0.1}
+      port: ${REDIS_PORT:6379}
+      connect-timeout: 1s
+      timeout: 1s
+  rabbitmq:
+    host: ${RABBITMQ_HOST:127.0.0.1}
+    port: ${RABBITMQ_PORT:5672}
+    username: ${RABBITMQ_USERNAME:lastcall}
+    password: ${RABBITMQ_PASSWORD:lastcall-local}
+    virtual-host: ${RABBITMQ_VHOST:/}
+    connection-timeout: 2s
+
+app:
+  jwt:
+    secret: baseline-local-only-signing-key-do-not-use-in-production-2026
+    expiration-ms: 86400000
+  minio:
+    endpoint: http://127.0.0.1:9000
+    access-key: baseline-local
+    secret-key: baseline-local-placeholder
+    bucket-name: baseline
+  stripe:
+    # Placeholder only: baseline exercises browsing/orders, not external payments.
+    secret-key: sk_test_baseline_placeholder
+    webhook-secret: whsec_baseline_placeholder
+  order:
+    payment-timeout-minutes: 15
+  cache:
+    # Browse pages stay fresh naturally even before explicit invalidation is added.
+    product-browse-ttl: 60s
+  messaging:
+    outbox:
+      enabled: true
+      publish-interval-ms: 1000
+      batch-size: 20
+      confirm-timeout: 5s
+      claim-timeout: 2m
+      retry-base-delay: 2s
+      retry-max-delay: 1m
+
+storage:
+  local:
+    base-path: ./target/baseline-uploads
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  endpoint:
+    health:
+      show-details: always
+  metrics:
+    tags:
+      application: ${spring.application.name}

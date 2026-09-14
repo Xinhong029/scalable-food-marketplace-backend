@@ -1,0 +1,14 @@
+{
+  "endpoint": "/api/products/browse?page=0&size=20",
+  "virtualUsers": 1,
+  "durationSeconds": 30,
+  "cacheEnabled": false,
+  "requests": 14007,
+  "requestsPerSecond": 466.9021321864036,
+  "p50Milliseconds": 1.928,
+  "p95Milliseconds": 2.622,
+  "p99Milliseconds": 3.027,
+  "httpFailureRate": 0,
+  "averageResponseCharacters": 6676,
+  "mysqlBrowseSelects": 14007
+}

@@ -1,0 +1,49 @@
+spring:
+  application:
+    name: lastcall-eats
+  profiles:
+    active: dev
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  rabbitmq:
+    publisher-confirm-type: correlated
+    publisher-returns: true
+    template:
+      mandatory: true
+    listener:
+      simple:
+        acknowledge-mode: auto
+        default-requeue-rejected: false
+        retry:
+          enabled: true
+          max-attempts: 3
+          initial-interval: 1s
+          multiplier: 2
+          max-interval: 5s
+
+  data:
+    redis:
+      # This project uses RedisTemplate as a cache, not Redis repository entities.
+      repositories:
+        enabled: false
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: UTC
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html

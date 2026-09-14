@@ -1,0 +1,1034 @@
+{
+  "run_id": "304ca71f14c5",
+  "time_utc": "2026-09-12T06:33:10.006316+00:00",
+  "base_url": "http://127.0.0.1:8081",
+  "listing_id": 1009992,
+  "clients": 100,
+  "before": {
+    "initial_quantity": 10,
+    "remaining_quantity": 10,
+    "available": 1,
+    "orders": 0,
+    "distinct_buyers": 0
+  },
+  "after": {
+    "initial_quantity": 10,
+    "remaining_quantity": 0,
+    "available": 0,
+    "orders": 10,
+    "distinct_buyers": 10
+  },
+  "http_successes": 10,
+  "http_status_counts": {
+    "400": 90,
+    "200": 10
+  },
+  "oversold": false,
+  "inventory_consistent": true,
+  "max_dispatch_offset_ms": 12.035292020300403,
+  "source_sha256": "25fc3d26f451093030dc98aa34ccb9bddf166c1b5753faf9a109f67356c23885",
+  "jar_sha256": "dec5feaade12e23a1d2b36d2e71551ffc36042546670abe8f796257dd6ba5e80",
+  "results": [
+    {
+      "user_id": 110,
+      "elapsed_ms": 2580.2312919986434,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 0.0
+    },
+    {
+      "user_id": 108,
+      "elapsed_ms": 2580.3902500192635,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 0.19433299894444644
+    },
+    {
+      "user_id": 107,
+      "elapsed_ms": 2582.087374990806,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 11.793208017479628
+    },
+    {
+      "user_id": 104,
+      "elapsed_ms": 2580.2624999778345,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 0.30179202440194786
+    },
+    {
+      "user_id": 113,
+      "elapsed_ms": 2580.2553340035956,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 0.4543329996522516
+    },
+    {
+      "user_id": 111,
+      "elapsed_ms": 2482.337500026915,
+      "http_status": 200,
+      "business_code": 200,
+      "message": "success",
+      "order_id": 83,
+      "order_status": "PENDING_PAYMENT",
+      "dispatch_offset_ms": 0.5354169989004731
+    },
+    {
+      "user_id": 105,
+      "elapsed_ms": 2540.3631669760216,
+      "http_status": 200,
+      "business_code": 200,
+      "message": "success",
+      "order_id": 89,
+      "order_status": "PENDING_PAYMENT",
+      "dispatch_offset_ms": 0.6222080264706165
+    },
+    {
+      "user_id": 106,
+      "elapsed_ms": 2580.5767919810023,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 0.7435830193571746
+    },
+    {
+      "user_id": 109,
+      "elapsed_ms": 2569.1457909997553,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is sold out",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 0.8227920043282211
+    },
+    {
+      "user_id": 112,
+      "elapsed_ms": 2534.7582080285065,
+      "http_status": 200,
+      "business_code": 200,
+      "message": "success",
+      "order_id": 88,
+      "order_status": "PENDING_PAYMENT",
+      "dispatch_offset_ms": 0.8941249980125576
+    },
+    {
+      "user_id": 116,
+      "elapsed_ms": 2564.9371249892283,
+      "http_status": 200,
+      "business_code": 200,
+      "message": "success",
+      "order_id": 92,
+      "order_status": "PENDING_PAYMENT",
+      "dispatch_offset_ms": 0.9925420163199306
+    },
+    {
+      "user_id": 123,
+      "elapsed_ms": 2556.4611250010785,
+      "http_status": 200,
+      "business_code": 200,
+      "message": "success",
+      "order_id": 91,
+      "order_status": "PENDING_PAYMENT",
+      "dispatch_offset_ms": 1.094542007194832
+    },
+    {
+      "user_id": 114,
+      "elapsed_ms": 2569.1074169881176,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is sold out",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 1.1705830111168325
+    },
+    {
+      "user_id": 120,
+      "elapsed_ms": 2568.480832997011,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is sold out",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 1.2423750013113022
+    },
+    {
+      "user_id": 118,
+      "elapsed_ms": 2569.2951249948237,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is sold out",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 1.357375003863126
+    },
+    {
+      "user_id": 119,
+      "elapsed_ms": 2568.279500002973,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is sold out",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 1.6442500054836273
+    },
+    {
+      "user_id": 115,
+      "elapsed_ms": 2571.228249988053,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is sold out",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 1.5731670137029141
+    },
+    {
+      "user_id": 117,
+      "elapsed_ms": 2548.2479160127696,
+      "http_status": 200,
+      "business_code": 200,
+      "message": "success",
+      "order_id": 90,
+      "order_status": "PENDING_PAYMENT",
+      "dispatch_offset_ms": 1.709542004391551
+    },
+    {
+      "user_id": 121,
+      "elapsed_ms": 2568.344541999977,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 1.800375001039356
+    },
+    {
+      "user_id": 122,
+      "elapsed_ms": 2568.664667021949,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is sold out",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 1.9528330012690276
+    },
+    {
+      "user_id": 124,
+      "elapsed_ms": 2500.6069999944884,
+      "http_status": 200,
+      "business_code": 200,
+      "message": "success",
+      "order_id": 85,
+      "order_status": "PENDING_PAYMENT",
+      "dispatch_offset_ms": 2.0510420145001262
+    },
+    {
+      "user_id": 131,
+      "elapsed_ms": 2495.575375010958,
+      "http_status": 200,
+      "business_code": 200,
+      "message": "success",
+      "order_id": 84,
+      "order_status": "PENDING_PAYMENT",
+      "dispatch_offset_ms": 2.119542012223974
+    },
+    {
+      "user_id": 128,
+      "elapsed_ms": 2571.5760000166483,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is sold out",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 2.202250005211681
+    },
+    {
+      "user_id": 130,
+      "elapsed_ms": 2569.58283399581,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 3.4720830153673887
+    },
+    {
+      "user_id": 132,
+      "elapsed_ms": 2570.0444170215633,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 2.370250003878027
+    },
+    {
+      "user_id": 125,
+      "elapsed_ms": 2578.564291994553,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 6.602958019357175
+    },
+    {
+      "user_id": 133,
+      "elapsed_ms": 2577.7639590087347,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 6.711583002470434
+    },
+    {
+      "user_id": 129,
+      "elapsed_ms": 2570.020624989411,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 2.5588330172467977
+    },
+    {
+      "user_id": 127,
+      "elapsed_ms": 2517.5203749968205,
+      "http_status": 200,
+      "business_code": 200,
+      "message": "success",
+      "order_id": 86,
+      "order_status": "PENDING_PAYMENT",
+      "dispatch_offset_ms": 2.7580000169109553
+    },
+    {
+      "user_id": 126,
+      "elapsed_ms": 2570.274750003591,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 2.902708016335964
+    },
+    {
+      "user_id": 134,
+      "elapsed_ms": 2569.8178749880753,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 3.1719170219730586
+    },
+    {
+      "user_id": 135,
+      "elapsed_ms": 2577.5530000100844,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 6.8840830062981695
+    },
+    {
+      "user_id": 136,
+      "elapsed_ms": 2524.7187500062864,
+      "http_status": 200,
+      "business_code": 200,
+      "message": "success",
+      "order_id": 87,
+      "order_status": "PENDING_PAYMENT",
+      "dispatch_offset_ms": 3.356583009008318
+    },
+    {
+      "user_id": 137,
+      "elapsed_ms": 2579.004541010363,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 3.555041999788955
+    },
+    {
+      "user_id": 138,
+      "elapsed_ms": 2574.9071669997647,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 3.6763750249519944
+    },
+    {
+      "user_id": 142,
+      "elapsed_ms": 2569.95320902206,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 3.7913330015726388
+    },
+    {
+      "user_id": 139,
+      "elapsed_ms": 2576.0124170046765,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 3.9185000059660524
+    },
+    {
+      "user_id": 140,
+      "elapsed_ms": 2574.879833002342,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 4.053750017192215
+    },
+    {
+      "user_id": 141,
+      "elapsed_ms": 2576.9653749885038,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 7.062375021632761
+    },
+    {
+      "user_id": 143,
+      "elapsed_ms": 2575.913166976534,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 4.425500024808571
+    },
+    {
+      "user_id": 144,
+      "elapsed_ms": 2578.0057919910178,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 4.530500009423122
+    },
+    {
+      "user_id": 145,
+      "elapsed_ms": 2576.6240830125753,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 4.660125006921589
+    },
+    {
+      "user_id": 146,
+      "elapsed_ms": 2577.3208329919726,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 4.759500006912276
+    },
+    {
+      "user_id": 147,
+      "elapsed_ms": 2577.9736659897026,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 4.864417016506195
+    },
+    {
+      "user_id": 153,
+      "elapsed_ms": 2577.4744999944232,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 4.9639170174486935
+    },
+    {
+      "user_id": 150,
+      "elapsed_ms": 2577.1905000146944,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 5.049917002907023
+    },
+    {
+      "user_id": 149,
+      "elapsed_ms": 2574.4330000015907,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 5.165000009583309
+    },
+    {
+      "user_id": 152,
+      "elapsed_ms": 2574.7711659932975,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is sold out",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 5.245542008196935
+    },
+    {
+      "user_id": 151,
+      "elapsed_ms": 2577.316457987763,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 5.349625018425286
+    },
+    {
+      "user_id": 154,
+      "elapsed_ms": 2577.9759169963654,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 5.458833009470254
+    },
+    {
+      "user_id": 148,
+      "elapsed_ms": 2577.7185000188183,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 5.627167003694922
+    },
+    {
+      "user_id": 155,
+      "elapsed_ms": 2586.3564999890514,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 10.796375019708648
+    },
+    {
+      "user_id": 156,
+      "elapsed_ms": 2582.028625009116,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 7.710167003097013
+    },
+    {
+      "user_id": 157,
+      "elapsed_ms": 2586.822540994035,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 9.390542021719739
+    },
+    {
+      "user_id": 162,
+      "elapsed_ms": 2580.170666973572,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 7.4599580257199705
+    },
+    {
+      "user_id": 164,
+      "elapsed_ms": 2589.47941599763,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 7.802542007993907
+    },
+    {
+      "user_id": 160,
+      "elapsed_ms": 2584.8116659908555,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 9.991042024921626
+    },
+    {
+      "user_id": 158,
+      "elapsed_ms": 2584.9188749853056,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 8.079750026809052
+    },
+    {
+      "user_id": 159,
+      "elapsed_ms": 2577.0437920000404,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 7.903875026386231
+    },
+    {
+      "user_id": 163,
+      "elapsed_ms": 2585.963666992029,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 7.574708026368171
+    },
+    {
+      "user_id": 161,
+      "elapsed_ms": 2585.1238750037737,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 10.887833021115512
+    },
+    {
+      "user_id": 165,
+      "elapsed_ms": 2586.23129199259,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 11.144250020151958
+    },
+    {
+      "user_id": 166,
+      "elapsed_ms": 2584.216708986787,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 10.173583024879918
+    },
+    {
+      "user_id": 167,
+      "elapsed_ms": 2585.8316250087228,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 8.223250013543293
+    },
+    {
+      "user_id": 168,
+      "elapsed_ms": 2589.461791998474,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 7.975958025781438
+    },
+    {
+      "user_id": 169,
+      "elapsed_ms": 2585.7839999953285,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 10.97087500966154
+    },
+    {
+      "user_id": 171,
+      "elapsed_ms": 2586.492999980692,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 9.298750024754554
+    },
+    {
+      "user_id": 172,
+      "elapsed_ms": 2587.680958007695,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 8.978792000561953
+    },
+    {
+      "user_id": 173,
+      "elapsed_ms": 2587.9487080092076,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 9.672125015640631
+    },
+    {
+      "user_id": 170,
+      "elapsed_ms": 2587.5734169967473,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 8.42150000971742
+    },
+    {
+      "user_id": 174,
+      "elapsed_ms": 2586.0024580033496,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 11.05391699820757
+    },
+    {
+      "user_id": 175,
+      "elapsed_ms": 2585.390374995768,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 11.434000014560297
+    },
+    {
+      "user_id": 176,
+      "elapsed_ms": 2587.0612080034334,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 10.46154199866578
+    },
+    {
+      "user_id": 177,
+      "elapsed_ms": 2588.2611249980982,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 8.656958001665771
+    },
+    {
+      "user_id": 179,
+      "elapsed_ms": 2586.6791670268867,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 10.090374998981133
+    },
+    {
+      "user_id": 178,
+      "elapsed_ms": 2578.026167000644,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 5.8828750043176115
+    },
+    {
+      "user_id": 180,
+      "elapsed_ms": 2584.48054199107,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 10.26375000947155
+    },
+    {
+      "user_id": 185,
+      "elapsed_ms": 2589.010875002714,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 8.738417003769428
+    },
+    {
+      "user_id": 184,
+      "elapsed_ms": 2586.4842910086736,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 8.816417015623301
+    },
+    {
+      "user_id": 183,
+      "elapsed_ms": 2585.7940829882864,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 10.543292009970173
+    },
+    {
+      "user_id": 181,
+      "elapsed_ms": 2583.5840409854427,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 12.035292020300403
+    },
+    {
+      "user_id": 186,
+      "elapsed_ms": 2587.081749981735,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 8.151917019858956
+    },
+    {
+      "user_id": 182,
+      "elapsed_ms": 2587.6414999947883,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 8.890958008123562
+    },
+    {
+      "user_id": 187,
+      "elapsed_ms": 2583.9497499982826,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 9.775042010005563
+    },
+    {
+      "user_id": 189,
+      "elapsed_ms": 2588.141791988164,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 9.596375020919368
+    },
+    {
+      "user_id": 188,
+      "elapsed_ms": 2585.5663749971427,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 8.288167009595782
+    },
+    {
+      "user_id": 191,
+      "elapsed_ms": 2585.073875001399,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 11.356458009686321
+    },
+    {
+      "user_id": 190,
+      "elapsed_ms": 2577.722916001221,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 5.758417013566941
+    },
+    {
+      "user_id": 192,
+      "elapsed_ms": 2578.117666009348,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 5.978792003588751
+    },
+    {
+      "user_id": 194,
+      "elapsed_ms": 2587.2264159843326,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 10.345167014747858
+    },
+    {
+      "user_id": 195,
+      "elapsed_ms": 2584.1205829929095,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 11.266417015576735
+    },
+    {
+      "user_id": 193,
+      "elapsed_ms": 2586.550250009168,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 9.108583006309345
+    },
+    {
+      "user_id": 196,
+      "elapsed_ms": 2584.766582993325,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 9.852250019321218
+    },
+    {
+      "user_id": 197,
+      "elapsed_ms": 2584.419541002717,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 10.691917006624863
+    },
+    {
+      "user_id": 198,
+      "elapsed_ms": 2584.6863339829724,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 9.504833025857806
+    },
+    {
+      "user_id": 199,
+      "elapsed_ms": 2583.3774160128087,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 11.536792007973418
+    },
+    {
+      "user_id": 200,
+      "elapsed_ms": 2588.4661250165664,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 9.043208003276959
+    },
+    {
+      "user_id": 201,
+      "elapsed_ms": 2585.243542009266,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 11.626749997958541
+    },
+    {
+      "user_id": 202,
+      "elapsed_ms": 2585.251667012926,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 8.513083012076095
+    },
+    {
+      "user_id": 203,
+      "elapsed_ms": 2581.4553330128547,
+      "http_status": 400,
+      "business_code": 400,
+      "message": "Product listing is not available",
+      "order_id": null,
+      "order_status": null,
+      "dispatch_offset_ms": 7.340125011978671
+    }
+  ],
+  "limitations": "Client barrier approximates simultaneous arrival; OS/server/DB pool schedule requests. 100 clients does not imply 100 simultaneously executing DB transactions. No payment or fault injection."
+}

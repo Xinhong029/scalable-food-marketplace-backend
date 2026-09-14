@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.2.5</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>com.lastcalleats</groupId>
+    <artifactId>lastcall-eats</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>LastCall Eats</name>
+    <description>LastCall Eats - Food Waste Reduction Platform</description>
+
+    <modules>
+        <module>lastcall-common</module>
+        <module>lastcall-auth</module>
+        <module>lastcall-user</module>
+        <module>lastcall-merchant</module>
+        <module>lastcall-product</module>
+        <module>lastcall-order</module>
+        <module>lastcall-payment</module>
+        <module>lastcall-review</module>
+        <module>lastcall-api</module>
+        <!-- lastcall-admin: 待扩展 -->
+    </modules>
+
+    <properties>
+        <java.version>21</java.version>
+        <jjwt.version>0.12.6</jjwt.version>
+        <minio.version>8.5.11</minio.version>
+        <stripe.version>26.7.0</stripe.version>
+        <springdoc.version>2.3.0</springdoc.version>
+        <lombok.version>1.18.32</lombok.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- 内部模块依赖版本注册 -->
+            <dependency>
+                <groupId>com.lastcalleats</groupId>
+                <artifactId>lastcall-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.lastcalleats</groupId>
+                <artifactId>lastcall-auth</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.lastcalleats</groupId>
+                <artifactId>lastcall-user</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.lastcalleats</groupId>
+                <artifactId>lastcall-merchant</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.lastcalleats</groupId>
+                <artifactId>lastcall-product</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.lastcalleats</groupId>
+                <artifactId>lastcall-order</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.lastcalleats</groupId>
+                <artifactId>lastcall-payment</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.lastcalleats</groupId>
+                <artifactId>lastcall-review</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <!-- JWT -->
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-api</artifactId>
+                <version>${jjwt.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-impl</artifactId>
+                <version>${jjwt.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-jackson</artifactId>
+                <version>${jjwt.version}</version>
+            </dependency>
+
+            <!-- MinIO -->
+            <dependency>
+                <groupId>io.minio</groupId>
+                <artifactId>minio</artifactId>
+                <version>${minio.version}</version>
+            </dependency>
+
+            <!-- Stripe -->
+            <dependency>
+                <groupId>com.stripe</groupId>
+                <artifactId>stripe-java</artifactId>
+                <version>${stripe.version}</version>
+            </dependency>
+
+            <!-- Springdoc OpenAPI (Swagger) -->
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+                <version>${springdoc.version}</version>
+            </dependency>
+
+            <!-- Redis -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-redis</artifactId>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <!-- 所有子模块共享的依赖 -->
+    <dependencies>
+        <dependency>
+          <groupId>org.projectlombok</groupId>
+          <artifactId>lombok</artifactId>
+          <version>${lombok.version}</version>
+          <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                      <annotationProcessorPaths>
+                        <path>
+                          <groupId>org.projectlombok</groupId>
+                          <artifactId>lombok</artifactId>
+                          <version>${lombok.version}</version>
+                        </path>
+                      </annotationProcessorPaths>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+</project>

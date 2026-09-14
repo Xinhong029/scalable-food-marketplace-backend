@@ -1,0 +1,174 @@
+2026-09-11T23:08:24.867-07:00  WARN 5209 --- [lastcall-eats] [0.1-8081-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.867-07:00  WARN 5209 --- [lastcall-eats] [0.1-8081-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.867-07:00  WARN 5209 --- [lastcall-eats] [0.1-8081-exec-7] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.867-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.867-07:00  WARN 5209 --- [lastcall-eats] [0.1-8081-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.868-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.867-07:00  WARN 5209 --- [lastcall-eats] [0.1-8081-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.867-07:00  WARN 5209 --- [lastcall-eats] [0.1-8081-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.867-07:00  WARN 5209 --- [lastcall-eats] [0.1-8081-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.868-07:00 ERROR 5209 --- [lastcall-eats] [0.1-8081-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.868-07:00 ERROR 5209 --- [lastcall-eats] [0.1-8081-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.868-07:00 ERROR 5209 --- [lastcall-eats] [0.1-8081-exec-7] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.869-07:00 ERROR 5209 --- [lastcall-eats] [0.1-8081-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.869-07:00 ERROR 5209 --- [lastcall-eats] [0.1-8081-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.869-07:00 ERROR 5209 --- [lastcall-eats] [0.1-8081-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.869-07:00 ERROR 5209 --- [lastcall-eats] [0.1-8081-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.869-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-13] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.870-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-13] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.879-07:00 ERROR 5209 --- [lastcall-eats] [0.1-8081-exec-4] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.880-07:00 ERROR 5209 --- [lastcall-eats] [0.1-8081-exec-3] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.880-07:00 ERROR 5209 --- [lastcall-eats] [0.1-8081-exec-1] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.879-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-10] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.879-07:00 ERROR 5209 --- [lastcall-eats] [0.1-8081-exec-2] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.879-07:00 ERROR 5209 --- [lastcall-eats] [0.1-8081-exec-8] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.877-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-13] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.879-07:00 ERROR 5209 --- [lastcall-eats] [0.1-8081-exec-7] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.879-07:00 ERROR 5209 --- [lastcall-eats] [0.1-8081-exec-5] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.886-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-14] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.886-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-21] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.886-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-22] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.886-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-17] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.886-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-21] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.886-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-20] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.886-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-14] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.886-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-18] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.886-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-18] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.886-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-22] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.886-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-16] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.886-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-17] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.886-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-20] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.886-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-16] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.887-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-14] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.887-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-18] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.887-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-17] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.887-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-16] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.887-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-20] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.887-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-21] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.887-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-22] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.891-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-15] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.891-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-15] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.891-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-15] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.898-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-23] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.898-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-26] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.898-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-24] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.898-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-23] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.898-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-26] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.898-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-28] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.898-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-24] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.898-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-28] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.899-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-27] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.899-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-27] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.899-07:00  WARN 5209 --- [lastcall-eats] [0.1-8081-exec-9] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.899-07:00 ERROR 5209 --- [lastcall-eats] [0.1-8081-exec-9] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.900-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-29] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.900-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-29] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.899-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-26] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.899-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-23] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.899-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-27] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.899-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-24] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.899-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-28] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.900-07:00 ERROR 5209 --- [lastcall-eats] [0.1-8081-exec-9] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.900-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-29] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.904-07:00  WARN 5209 --- [lastcall-eats] [0.1-8081-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.904-07:00 ERROR 5209 --- [lastcall-eats] [0.1-8081-exec-6] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.904-07:00 ERROR 5209 --- [lastcall-eats] [0.1-8081-exec-6] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.906-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-38] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.906-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-67] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.906-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-38] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.906-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-34] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.906-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-34] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.906-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-67] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.906-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-33] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.906-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-64] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.906-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-68] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.906-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-35] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.906-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-33] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.906-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-35] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.906-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-64] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.906-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-68] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.906-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-38] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.906-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-33] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.906-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-34] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.906-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-67] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.906-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-35] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.906-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-68] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.906-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-64] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.909-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-11] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.909-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-11] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.909-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-40] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.909-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-40] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.909-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-11] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.909-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-40] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.910-07:00  WARN 5209 --- [lastcall-eats] [0.1-8081-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.910-07:00 ERROR 5209 --- [lastcall-eats] [0.1-8081-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.910-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-41] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.910-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.910-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-41] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.910-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-10] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.910-07:00  WARN 5209 --- [lastcall-eats] [0.1-8081-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.910-07:00  WARN 5209 --- [lastcall-eats] [0.1-8081-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.910-07:00 ERROR 5209 --- [lastcall-eats] [0.1-8081-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.910-07:00 ERROR 5209 --- [lastcall-eats] [0.1-8081-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.910-07:00  WARN 5209 --- [lastcall-eats] [0.1-8081-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.910-07:00 ERROR 5209 --- [lastcall-eats] [0.1-8081-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.911-07:00 ERROR 5209 --- [lastcall-eats] [0.1-8081-exec-2] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.911-07:00 ERROR 5209 --- [lastcall-eats] [0.1-8081-exec-8] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.911-07:00 ERROR 5209 --- [lastcall-eats] [0.1-8081-exec-1] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.911-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-10] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.911-07:00 ERROR 5209 --- [lastcall-eats] [0.1-8081-exec-4] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.912-07:00  WARN 5209 --- [lastcall-eats] [0.1-8081-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.911-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-41] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.912-07:00 ERROR 5209 --- [lastcall-eats] [0.1-8081-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.912-07:00  WARN 5209 --- [lastcall-eats] [0.1-8081-exec-7] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.912-07:00 ERROR 5209 --- [lastcall-eats] [0.1-8081-exec-7] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.913-07:00 ERROR 5209 --- [lastcall-eats] [0.1-8081-exec-7] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.913-07:00 ERROR 5209 --- [lastcall-eats] [0.1-8081-exec-3] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.914-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-16] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.914-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-16] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.914-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-14] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.914-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-18] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.914-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-18] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.914-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-14] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.914-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-18] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.914-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-16] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.914-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-14] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.916-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-15] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.916-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-15] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.916-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-21] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.916-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-21] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.916-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-22] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.916-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-19] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.916-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-22] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.916-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-19] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.916-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-17] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.916-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-17] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.916-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-15] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.916-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-21] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.917-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-17] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.916-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-22] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.916-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-19] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.918-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-44] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.918-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-45] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.918-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-44] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.918-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-43] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.918-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-45] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.918-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-43] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.919-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-44] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.919-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-43] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.919-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-45] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.921-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-49] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.921-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-49] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.921-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-47] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.921-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-47] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.921-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-50] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.921-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-51] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.921-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-50] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.921-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-51] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.921-07:00  WARN 5209 --- [lastcall-eats] [.1-8081-exec-46] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1213, SQLState: 40001
+2026-09-11T23:08:24.921-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-46] o.h.engine.jdbc.spi.SqlExceptionHelper   : Deadlock found when trying to get lock; try restarting transaction
+2026-09-11T23:08:24.921-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-49] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.921-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-47] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.921-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-46] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.921-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-51] c.l.c.exception.GlobalExceptionHandler   : Unexpected error
+2026-09-11T23:08:24.921-07:00 ERROR 5209 --- [lastcall-eats] [.1-8081-exec-50] c.l.c.exception.GlobalExceptionHandler   : Unexpected error

@@ -1,0 +1,213 @@
+{
+  "exit_code": 0,
+  "elapsed_seconds": 30.30350570799783,
+  "mysql_before": {
+    "Com_select": 1611884,
+    "Threads_connected": 11,
+    "Threads_running": 2
+  },
+  "mysql_after": {
+    "Com_select": 3812780,
+    "Threads_connected": 11,
+    "Threads_running": 2
+  },
+  "mysql_select_delta": 2200896,
+  "samples": [
+    {
+      "seconds": 0.02,
+      "processes_pid_cpu_percent_rss_kib_command": [
+        "5209   0.0 451296 /opt/homebrew/opt/openjdk@21/bin/java",
+        "12625   0.0   5600 k6",
+        "46257   0.0  67280 /opt/homebrew/opt/mysql/bin/mysqld"
+      ],
+      "mysql_global": {
+        "Com_select": 1611890,
+        "Threads_connected": 11,
+        "Threads_running": 2
+      }
+    },
+    {
+      "seconds": 2.08,
+      "processes_pid_cpu_percent_rss_kib_command": [
+        "5209 227.9 776752 /opt/homebrew/opt/openjdk@21/bin/java",
+        "12625  11.2 238112 k6",
+        "46257 223.7  71600 /opt/homebrew/opt/mysql/bin/mysqld"
+      ],
+      "mysql_global": {
+        "Com_select": 1761948,
+        "Threads_connected": 11,
+        "Threads_running": 4
+      }
+    },
+    {
+      "seconds": 4.15,
+      "processes_pid_cpu_percent_rss_kib_command": [
+        "5209 235.6 789152 /opt/homebrew/opt/openjdk@21/bin/java",
+        "12625   6.7 330720 k6",
+        "46257 225.3  72800 /opt/homebrew/opt/mysql/bin/mysqld"
+      ],
+      "mysql_global": {
+        "Com_select": 1912009,
+        "Threads_connected": 11,
+        "Threads_running": 2
+      }
+    },
+    {
+      "seconds": 6.19,
+      "processes_pid_cpu_percent_rss_kib_command": [
+        "5209 208.9 842272 /opt/homebrew/opt/openjdk@21/bin/java",
+        "12625   7.1 329184 k6",
+        "46257 225.3  73088 /opt/homebrew/opt/mysql/bin/mysqld"
+      ],
+      "mysql_global": {
+        "Com_select": 2061027,
+        "Threads_connected": 11,
+        "Threads_running": 3
+      }
+    },
+    {
+      "seconds": 8.24,
+      "processes_pid_cpu_percent_rss_kib_command": [
+        "5209 218.6 889984 /opt/homebrew/opt/openjdk@21/bin/java",
+        "12625  15.8 329408 k6",
+        "46257 223.7  73424 /opt/homebrew/opt/mysql/bin/mysqld"
+      ],
+      "mysql_global": {
+        "Com_select": 2204920,
+        "Threads_connected": 11,
+        "Threads_running": 3
+      }
+    },
+    {
+      "seconds": 10.28,
+      "processes_pid_cpu_percent_rss_kib_command": [
+        "5209 231.3 932064 /opt/homebrew/opt/openjdk@21/bin/java",
+        "12625  15.0 276192 k6",
+        "46257 223.1  71200 /opt/homebrew/opt/mysql/bin/mysqld"
+      ],
+      "mysql_global": {
+        "Com_select": 2348299,
+        "Threads_connected": 11,
+        "Threads_running": 4
+      }
+    },
+    {
+      "seconds": 12.34,
+      "processes_pid_cpu_percent_rss_kib_command": [
+        "5209 206.7 778288 /opt/homebrew/opt/openjdk@21/bin/java",
+        "12625  17.2 286704 k6",
+        "46257 223.1  71568 /opt/homebrew/opt/mysql/bin/mysqld"
+      ],
+      "mysql_global": {
+        "Com_select": 2498875,
+        "Threads_connected": 11,
+        "Threads_running": 3
+      }
+    },
+    {
+      "seconds": 14.38,
+      "processes_pid_cpu_percent_rss_kib_command": [
+        "5209 221.1 903472 /opt/homebrew/opt/openjdk@21/bin/java",
+        "12625  19.6 297184 k6",
+        "46257 222.3  71904 /opt/homebrew/opt/mysql/bin/mysqld"
+      ],
+      "mysql_global": {
+        "Com_select": 2649085,
+        "Threads_connected": 11,
+        "Threads_running": 6
+      }
+    },
+    {
+      "seconds": 16.43,
+      "processes_pid_cpu_percent_rss_kib_command": [
+        "5209 204.7 875680 /opt/homebrew/opt/openjdk@21/bin/java",
+        "12625  14.3 270224 k6",
+        "46257 222.9  72048 /opt/homebrew/opt/mysql/bin/mysqld"
+      ],
+      "mysql_global": {
+        "Com_select": 2798205,
+        "Threads_connected": 11,
+        "Threads_running": 2
+      }
+    },
+    {
+      "seconds": 18.48,
+      "processes_pid_cpu_percent_rss_kib_command": [
+        "5209 250.5 846848 /opt/homebrew/opt/openjdk@21/bin/java",
+        "12625  18.7 272480 k6",
+        "46257 214.6  72944 /opt/homebrew/opt/mysql/bin/mysqld"
+      ],
+      "mysql_global": {
+        "Com_select": 2946663,
+        "Threads_connected": 11,
+        "Threads_running": 4
+      }
+    },
+    {
+      "seconds": 20.52,
+      "processes_pid_cpu_percent_rss_kib_command": [
+        "5209 212.6 978304 /opt/homebrew/opt/openjdk@21/bin/java",
+        "12625  18.8 272576 k6",
+        "46257 220.6  73216 /opt/homebrew/opt/mysql/bin/mysqld"
+      ],
+      "mysql_global": {
+        "Com_select": 3095690,
+        "Threads_connected": 11,
+        "Threads_running": 4
+      }
+    },
+    {
+      "seconds": 22.57,
+      "processes_pid_cpu_percent_rss_kib_command": [
+        "5209 205.9 1011600 /opt/homebrew/opt/openjdk@21/bin/java",
+        "12625  13.7 272512 k6",
+        "46257 225.7  68768 /opt/homebrew/opt/mysql/bin/mysqld"
+      ],
+      "mysql_global": {
+        "Com_select": 3250351,
+        "Threads_connected": 11,
+        "Threads_running": 4
+      }
+    },
+    {
+      "seconds": 24.62,
+      "processes_pid_cpu_percent_rss_kib_command": [
+        "5209 208.5 941008 /opt/homebrew/opt/openjdk@21/bin/java",
+        "12625  19.7 272528 k6",
+        "46257 221.0  69040 /opt/homebrew/opt/mysql/bin/mysqld"
+      ],
+      "mysql_global": {
+        "Com_select": 3401859,
+        "Threads_connected": 11,
+        "Threads_running": 3
+      }
+    },
+    {
+      "seconds": 26.66,
+      "processes_pid_cpu_percent_rss_kib_command": [
+        "5209 188.6 974336 /opt/homebrew/opt/openjdk@21/bin/java",
+        "12625  13.6 264608 k6",
+        "46257 231.7  66160 /opt/homebrew/opt/mysql/bin/mysqld"
+      ],
+      "mysql_global": {
+        "Com_select": 3551863,
+        "Threads_connected": 11,
+        "Threads_running": 2
+      }
+    },
+    {
+      "seconds": 28.7,
+      "processes_pid_cpu_percent_rss_kib_command": [
+        "5209 213.6 789648 /opt/homebrew/opt/openjdk@21/bin/java",
+        "12625  12.0 264992 k6",
+        "46257 221.4  66448 /opt/homebrew/opt/mysql/bin/mysqld"
+      ],
+      "mysql_global": {
+        "Com_select": 3702742,
+        "Threads_connected": 11,
+        "Threads_running": 5
+      }
+    }
+  ],
+  "note": "MySQL counters cover the shared server, not just this app. Observer opens a transient connection per sample. ps CPU is OS-reported, not instantaneous."
+}

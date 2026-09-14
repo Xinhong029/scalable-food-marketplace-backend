@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="PickupCodeServiceImplTest" type="JUnit" factoryName="JUnit">
+    <module name="lastcall-order" />
+    <option name="MAIN_CLASS_NAME" value="com.lastcalleats.order.service.impl.PickupCodeServiceImplTest" />
+    <option name="METHOD_NAME" value="" />
+    <option name="PACKAGE_NAME" value="" />
+    <option name="TEST_OBJECT" value="class" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <method v="2" />
+  </configuration>
+</component>

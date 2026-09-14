@@ -1,0 +1,22 @@
+{
+  "recorded_at": "2026-09-12T05:33:05.327195+00:00",
+  "git_head": "12e5bc892a75995853d45d920ca4247ad30ceffa",
+  "working_tree": " M lastcall-api/src/main/java/com/lastcalleats/LastCallEatsApplication.java\n M lastcall-order/src/main/java/com/lastcalleats/order/entity/OrderDO.java\n?? docs/\n?? lastcall-api/src/main/resources/application-baseline.yml\n?? scripts/\n",
+  "os": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "cpu": "Apple M5 Pro",
+  "logical_cpus": 15,
+  "memory_bytes": 25769803776,
+  "mysql": "9.6.0",
+  "java": "21.0.10",
+  "k6": "k6 v2.2.0 (commit/devel, go1.26.5, darwin/arm64)",
+  "sha256": {
+    "scripts/baseline/browse.js": "8c3faaadf61d2ff7c300f9793488345ec9ac6652449c0184d3b129ecd57a01a6",
+    "scripts/baseline/observe.py": "9b48051dbc0f13095d3a605e757b987dbee664578a42e5c0165d19bd338a7cf9",
+    "scripts/baseline/seed_load.py": "3b3cd359d236097cdaac036fa4a01eeedcd95b830497ae663303ea149c8107ec",
+    "lastcall-api/src/main/resources/application-baseline.yml": "d897d41ef2e891d9194a2f47ddd4b946c4f235d32af298503605e77a4ff799c8",
+    "lastcall-api/target/lastcall-api-0.0.1-SNAPSHOT.jar": "229cfb8990ae5565265f972756147481b4fc12393f3e8788e150495c8ae1605f"
+  },
+  "model": "closed-loop constant VUs, no think time, 30 seconds per measurement, 5 seconds warmup per dataset",
+  "dataset": "9 original listings then 9991 additional listings with distinct templates, cycling across 3 merchants",
+  "limits": "One short run per workload; all components on same Mac; MySQL global counters include other clients."
+}
