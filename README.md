@@ -24,7 +24,8 @@ flowchart LR
     API --> Order
     DBWrite --> MySQL
     Notification --> MySQL
-    Actuator[Actuator / Micrometer] --> Prometheus[Prometheus endpoint]
+    Actuator[Actuator / Micrometer] --> Prometheus[Prometheus]
+    Prometheus --> Grafana[Shared Grafana dashboard]
     API --> Actuator
 ```
 
@@ -85,6 +86,8 @@ See [Transactional Outbox](docs/messaging/transactional-outbox.md) and [idempote
 
 Spring Boot Actuator and Micrometer expose dependency health and Prometheus-compatible metrics:
 
+- Browse latency histograms split by Redis cache hit and miss
+- Browse request, failure, and cache-result counters
 - Outbox publication success and failure counters
 - Consumer success, duplicate and failure-attempt counters
 - Current `PENDING`, `PROCESSING`, and `PUBLISHED` Outbox gauges
@@ -92,7 +95,20 @@ Spring Boot Actuator and Micrometer expose dependency health and Prometheus-comp
 - MySQL, Redis and RabbitMQ health indicators
 - Event logs correlated by `eventId`, `orderId`, and `merchantId`
 
-See the [observability report](docs/messaging/observability.md).
+The repository includes a provisioned Prometheus and Grafana stack. Its shared dashboard gives the
+React Native team a time-series view of backend P50/P95/P99 latency, throughput, failures, Redis
+cache effectiveness, and asynchronous order-event health. See the
+[backend latency dashboard guide](docs/observability/backend-latency-dashboard.md) and the
+[messaging observability report](docs/messaging/observability.md).
+
+Run the Spring Boot application with the `dev` profile on port 8080, then start the dashboard:
+
+```bash
+docker compose -f observability/docker-compose.yml up -d
+```
+
+Open `http://localhost:3000/d/lastcall-backend-latency`. Prometheus is available at
+`http://localhost:9090` and scrapes the backend every five seconds.
 
 ## Tech stack
 

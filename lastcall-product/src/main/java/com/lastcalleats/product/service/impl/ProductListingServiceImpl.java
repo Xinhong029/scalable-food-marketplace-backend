@@ -7,9 +7,11 @@ import com.lastcalleats.product.dto.ListingResponse;
 import com.lastcalleats.product.dto.UserBrowseResponse;
 import com.lastcalleats.product.entity.ProductListingDO;
 import com.lastcalleats.product.entity.ProductTemplateDO;
+import com.lastcalleats.product.metrics.ProductBrowseMetrics;
 import com.lastcalleats.product.repository.ProductListingRepo;
 import com.lastcalleats.product.repository.ProductTemplateRepo;
 import com.lastcalleats.product.service.ProductListingService;
+import io.micrometer.core.instrument.Timer;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.data.domain.Pageable;
@@ -44,6 +46,9 @@ public class ProductListingServiceImpl implements ProductListingService {
   /** Redis Cache-Aside access for user-facing browse pages. */
   private final ProductBrowseCache productBrowseCache;
 
+  /** Low-cardinality latency and cache metrics for the browse path. */
+  private final ProductBrowseMetrics productBrowseMetrics;
+
   /**
    * Constructs the listing service with required repositories.
    *
@@ -52,10 +57,12 @@ public class ProductListingServiceImpl implements ProductListingService {
    */
   public ProductListingServiceImpl(ProductListingRepo productListingRepo,
       ProductTemplateRepo productTemplateRepo,
-      ProductBrowseCache productBrowseCache) {
+      ProductBrowseCache productBrowseCache,
+      ProductBrowseMetrics productBrowseMetrics) {
     this.productListingRepo = productListingRepo;
     this.productTemplateRepo = productTemplateRepo;
     this.productBrowseCache = productBrowseCache;
+    this.productBrowseMetrics = productBrowseMetrics;
   }
 
   /**
@@ -147,23 +154,37 @@ public class ProductListingServiceImpl implements ProductListingService {
   @Override
   @Transactional(readOnly = true)
   public Slice<UserBrowseResponse> browseAvailableListings(Pageable pageable) {
-    int pageSize = pageable.getPageSize();
-    int pageNumber = pageable.getPageNumber();
-    var cachedPage = productBrowseCache.get(pageNumber, pageSize);
-    if (cachedPage.isPresent()) {
-      return cachedPage.get().toSlice(pageable);
-    }
+    Timer.Sample sample = productBrowseMetrics.start();
+    String cacheResult = ProductBrowseMetrics.CACHE_UNKNOWN;
+    String outcome = ProductBrowseMetrics.OUTCOME_SUCCESS;
+    try {
+      int pageSize = pageable.getPageSize();
+      int pageNumber = pageable.getPageNumber();
+      var cachedPage = productBrowseCache.get(pageNumber, pageSize);
+      if (cachedPage.isPresent()) {
+        cacheResult = ProductBrowseMetrics.CACHE_HIT;
+        productBrowseMetrics.recordCacheAccess(cacheResult);
+        return cachedPage.get().toSlice(pageable);
+      }
 
-    List<UserBrowseResponse> rows = productListingRepo
-        .findAvailableForBrowse(pageSize + 1, pageable.getOffset())
-        .stream()
-        .map(UserBrowseResponse::from)
-        .toList();
-    boolean hasNext = rows.size() > pageSize;
-    List<UserBrowseResponse> content = hasNext ? rows.subList(0, pageSize) : rows;
-    Slice<UserBrowseResponse> result = new SliceImpl<>(content, pageable, hasNext);
-    productBrowseCache.put(new ProductBrowseCacheEntry(content, pageNumber, pageSize, hasNext));
-    return result;
+      cacheResult = ProductBrowseMetrics.CACHE_MISS;
+      productBrowseMetrics.recordCacheAccess(cacheResult);
+      List<UserBrowseResponse> rows = productListingRepo
+          .findAvailableForBrowse(pageSize + 1, pageable.getOffset())
+          .stream()
+          .map(UserBrowseResponse::from)
+          .toList();
+      boolean hasNext = rows.size() > pageSize;
+      List<UserBrowseResponse> content = hasNext ? rows.subList(0, pageSize) : rows;
+      Slice<UserBrowseResponse> result = new SliceImpl<>(content, pageable, hasNext);
+      productBrowseCache.put(new ProductBrowseCacheEntry(content, pageNumber, pageSize, hasNext));
+      return result;
+    } catch (RuntimeException exception) {
+      outcome = ProductBrowseMetrics.OUTCOME_FAILURE;
+      throw exception;
+    } finally {
+      productBrowseMetrics.recordRequest(sample, cacheResult, outcome);
+    }
   }
 
   /**

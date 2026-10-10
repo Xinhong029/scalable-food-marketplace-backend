@@ -8,6 +8,7 @@ import com.lastcalleats.product.dto.UserBrowseProjection;
 import com.lastcalleats.product.dto.UserBrowseResponse;
 import com.lastcalleats.product.entity.ProductListingDO;
 import com.lastcalleats.product.entity.ProductTemplateDO;
+import com.lastcalleats.product.metrics.ProductBrowseMetrics;
 import com.lastcalleats.product.repository.ProductListingRepo;
 import com.lastcalleats.product.repository.ProductTemplateRepo;
 import org.junit.jupiter.api.BeforeEach;
@@ -54,6 +55,9 @@ class ProductListingServiceImplTest {
 
   @Mock
   private ProductBrowseCache productBrowseCache;
+
+  @Mock
+  private ProductBrowseMetrics productBrowseMetrics;
 
   @InjectMocks
   private ProductListingServiceImpl productListingService;
@@ -305,6 +309,10 @@ class ProductListingServiceImplTest {
     assertEquals(3, response.getRemainingQuantity());
     verify(productListingRepo).findAvailableForBrowse(21, 0);
     verify(productBrowseCache).put(any(ProductBrowseCacheEntry.class));
+    verify(productBrowseMetrics).recordCacheAccess(ProductBrowseMetrics.CACHE_MISS);
+    verify(productBrowseMetrics).recordRequest(
+        isNull(), eq(ProductBrowseMetrics.CACHE_MISS),
+        eq(ProductBrowseMetrics.OUTCOME_SUCCESS));
     verifyNoInteractions(productTemplateRepo);
   }
 
@@ -328,5 +336,27 @@ class ProductListingServiceImplTest {
     assertFalse(result.hasNext());
     verifyNoInteractions(productListingRepo);
     verify(productBrowseCache, never()).put(any());
+    verify(productBrowseMetrics).recordCacheAccess(ProductBrowseMetrics.CACHE_HIT);
+    verify(productBrowseMetrics).recordRequest(
+        isNull(), eq(ProductBrowseMetrics.CACHE_HIT),
+        eq(ProductBrowseMetrics.OUTCOME_SUCCESS));
+  }
+
+  /** Verifies that database failures are visible in browse outcome metrics. */
+  @Test
+  @DisplayName("browseAvailableListings should record a failed cache-miss request")
+  void browseAvailableListings_databaseFailure_recordsFailure() {
+    Pageable pageable = PageRequest.of(0, 20);
+    when(productBrowseCache.get(0, 20)).thenReturn(Optional.empty());
+    when(productListingRepo.findAvailableForBrowse(21, 0))
+        .thenThrow(new IllegalStateException("database unavailable"));
+
+    assertThrows(IllegalStateException.class,
+        () -> productListingService.browseAvailableListings(pageable));
+
+    verify(productBrowseMetrics).recordCacheAccess(ProductBrowseMetrics.CACHE_MISS);
+    verify(productBrowseMetrics).recordRequest(
+        isNull(), eq(ProductBrowseMetrics.CACHE_MISS),
+        eq(ProductBrowseMetrics.OUTCOME_FAILURE));
   }
 }
